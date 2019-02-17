@@ -11,7 +11,7 @@ output:
     reveal_options:
       slideNumber: true
     css: style.css
-    self_contained: false
+    self_contained: true
 ---
 
 ```{r setup, include = FALSE}
@@ -196,7 +196,7 @@ longcars <- gather(minicars, var, val, -am, -vs, -mpg)
 # wt列とhp列がの列名がvar列の値に、それぞれの値がval列に入る
 ```
 
-<div class = 'left', style = 'color:#CCCCCC;font-size:80%' />
+<div class = 'left', style = 'color:#CCCCCC;font-size:80%'>
 
 minicars
 
@@ -206,7 +206,7 @@ knitr::kable(minicars[1:4, ])
 
 </div>
 
-<div class = 'right', style = 'font-size:80%' />
+<div class = 'right', style = 'font-size:80%'>
 
 longcars
 
@@ -222,7 +222,7 @@ knitr::kable(gather(minicars[1:4, ], var, val, -am, -vs, -mpg))
 `-列名` で、`gather`しない変数を指定できる。  
 `spread` で戻せる。
 
-<div class = 'left' />
+<div class = 'left'>
 
 wide format  
 `spread(long, key, value)`
@@ -238,7 +238,7 @@ kable(wide)
 
 </div>
 
-<div class = 'right' />
+<div class = 'right'>
 
 long format  
 `gather(wide, key, value, -a)`
