@@ -2,6 +2,7 @@
 title: |
   | ggplot2で図を並べる
   | <span style = 'font-size: 50%'>〜facetごり押した私とpatchworkとの出会い〜</span>
+pagetitle: ggplot2で図を並べる
 author: atusy
 date: 2018-10-20
 output:
